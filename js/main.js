@@ -6,12 +6,7 @@ function solicitarNombre() {
         nombre = prompt("Ingrese su nombre");
     }
     return nombre;
-}
-
-let nombreCliente = solicitarNombre();
-let costo = parseFloat(prompt("Ingrese el precio de costo del producto"))
-
-while (true) {
+    while (true) {
     if (costo != "" && !isNaN(costo)) {
         alert("Muy bien!");
         break;
@@ -20,6 +15,12 @@ while (true) {
         break;
     }
 }
+}
+
+let nombreCliente = solicitarNombre();
+let costo = parseFloat(prompt("Ingrese el precio de costo del producto"))
+
+
 
 precioCosto = costo.toFixed(2);
 console.log("El precio de costo del producto a calcular es $" + precioCosto);
